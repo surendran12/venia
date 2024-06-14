@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="#">Venia</a></div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Smart Gear</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+                <div class="cart">
+                    <img src="./images/cart.png" />
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container-full">
+            <div class="banner">
+                <div class="bannerContent">
+                    <h1>Men's Outerwear</h1>
+                </div>
+                <div class="bannerImage">
+                    <img src="./images/banner.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="productList">
+                <div class="filterbox">
+                    <div class="breadcrumb-container">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Clothes</a></li>
+                            <li class="breadcrumb-item"><a href="#">Men's</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Outerwear</li>
+                        </ol>
+                    </div>
+                    <div class="filterView">
+                        <h5>Filter</h5>
+                        <hr/>
+                        <p>Categories</p>
+                        <div id="categoryFilter"></div>
+                        <hr/>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="searchview">
+                        <p id="resultCount">0 Results</p>
+                        <input type="text" id="searchInput" placeholder="Search by name...">
+                        <div class="selectDropdown">
+                            <button class="searchbtn">Filter Result</button>
+                            <select id="sortOptions">
+                                <option value="none">Sort by price</option>
+                                <option value="price-desc">High to low</option>
+                                <option value="price-asc">Low to high</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="product-list">
+                        <div class="shimmerbg shimmerLoad"></div>
+                        <div class="shimmerbg shimmerLoad"></div>
+                        <div class="shimmerbg shimmerLoad"></div>
+                        <div class="shimmerbg shimmerLoad"></div>
+                        <div class="shimmerbg shimmerLoad"></div>
+                        <div class="shimmerbg shimmerLoad"></div>
+                    </div>
+                    <div class="loadbtn">
+                        <button id="loadMoreBtn">Load More</button>
+                    </div>
+                    <div class="footerPagination">
+                        <div class="pagination" id="pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bottomSection">
+            <div class="container">
+                <div class="footer">
+                    <div>VENIA</div>
+                    <div>© Company Name Address Ave, City Name, State ZIP</div>
+                    <div><span>Terms of Use</span> <span>Privacy Policy</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<script src="./js/script.js"></script>
+
+</body>
+</html>
